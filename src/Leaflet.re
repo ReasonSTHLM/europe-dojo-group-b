@@ -99,4 +99,4 @@ let create_lat_lng = (~latitude, ~longitude, ~altitude) =>
 external point_float : (float, float, bool) => Point.t = "point";
 
 [@bs.module "leaflet"]
-external create_map : (string, map_options) => Map.t = "map";
+external create_map : (Dom.element, map_options) => Map.t = "map";
