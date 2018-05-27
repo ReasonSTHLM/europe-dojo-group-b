@@ -54,7 +54,7 @@ module Map = {
   [@bs.send] [@bs.return null_to_opt]
   external maxBounds : t => option(LatLngBounds.t) = "";
   /* Methods for Layers and Controls */
-  [@bs.send] external addLayer : (t, Layer.t) => t = "";
+  [@bs.send] external addLayer : (t, Layer.t) => t = "addLayer";
   [@bs.send] external removeLayer : (t, Layer.t) => t = "";
   [@bs.send] external hasLayer : (t, Layer.t) => bool = "";
 };
