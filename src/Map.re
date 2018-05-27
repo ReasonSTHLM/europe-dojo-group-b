@@ -13,9 +13,11 @@ let setRef = (theRef, {ReasonReact.state}) =>
 let make = (~greeting, _children) => {
   /* spread the other default fields of component here and override a few */
   ...component,
-  didMount: (self) => {
-      Leaflet.create_map(self.state.node)
-  }
+  didMount: self =>
+    switch (self.state.node^) {
+    | Some(n) => Leaflet.create_map(n) |> ignore
+    | None => ()
+    },
   initialState: () => {node: ref(None)},
   render: self => <div ref=(self.handle(setRef)) />,
 };
