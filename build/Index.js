@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/Users/paulo/Development/reasonml/reasonable-group/build/";
+/******/ 	__webpack_require__.p = "/Users/romankravtsov/Projects/reasonable-group/build/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
