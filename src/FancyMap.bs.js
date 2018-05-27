@@ -25,7 +25,7 @@ function make() {
               if (match) {
                 var map = Leaflet.map(match[0], {
                       center: /* tuple */[
-                        0,
+                        50,
                         0
                       ],
                       zoom: 13

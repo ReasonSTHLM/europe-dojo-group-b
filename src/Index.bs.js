@@ -11,6 +11,6 @@ ReactDOMRe.renderToElementWithId(ReasonReact.element(/* None */0, /* None */0, C
 
 ReactDOMRe.renderToElementWithId(ReasonReact.element(/* None */0, /* None */0, Component2$ReactTemplate.make("Hello!", /* array */[])), "index2");
 
-ReactDOMRe.renderToElementWithId(ReasonReact.element(/* None */0, /* None */0, FancyMap$ReactTemplate.make(/* array */[])), "index3");
+ReactDOMRe.renderToElementWithId(ReasonReact.element(/* None */0, /* None */0, FancyMap$ReactTemplate.make(/* array */[])), "map");
 
 /*  Not a pure module */

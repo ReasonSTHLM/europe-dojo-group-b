@@ -18,7 +18,7 @@ let make = (_children) => {
   didMount: self =>
     switch (self.state.node^) {
     | Some(n) => {
-      let map = Leaflet.create_map(n, {"center": (0, 0), "zoom": 13});
+      let map = Leaflet.create_map(n, {"center": (50, 0), "zoom": 13});
       let layer = Leaflet.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       "maxZoom": 18,
       "minZoom": 1,
