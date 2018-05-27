@@ -19,7 +19,7 @@ let make = (_children) => {
     switch (self.state.node^) {
     | Some(n) => {
       let map = Leaflet.create_map(n, {"center": (0, 0), "zoom": 13});
-      let layer = Leaflet.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png", {
+      let layer = Leaflet.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       "maxZoom": 18,
       "minZoom": 1,
       "detectRetina": true,

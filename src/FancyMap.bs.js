@@ -30,7 +30,7 @@ function make() {
                       ],
                       zoom: 13
                     });
-                var layer = Leaflet.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png", {
+                var layer = Leaflet.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                       maxZoom: 18,
                       minZoom: 1,
                       detectRetina: true
