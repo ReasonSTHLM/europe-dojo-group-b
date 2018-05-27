@@ -15,7 +15,8 @@ let make = (~greeting, _children) => {
   ...component,
   didMount: self =>
     switch (self.state.node^) {
-    | Some(n) => Leaflet.create_map(n) |> ignore
+    | Some(n) =>
+      Leaflet.create_map(n, {"center": (0, 0), "zoom": 13}) |> ignore
     | None => ()
     },
   initialState: () => {node: ref(None)},
